@@ -190,8 +190,12 @@ def index_of_largest_number(numbers, n):
     #     The testing code is already written for you (above).
     # ------------------------------------------------------------------
 
-
-
+    big_number = 0
+    for k in range(n):
+        if numbers[k] > big_number:
+            big_number = big_number + 1
+        return k
+    return -1
 
 # ----------------------------------------------------------------------
 # Some problems iterate (loop) through the sequence accessing TWO
